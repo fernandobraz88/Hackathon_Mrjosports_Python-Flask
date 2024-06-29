@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MarjoSports API</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>MajorSports API</h1>
+            <h2>Cadastro de Usuários</h2>
+            <form id="registerForm">
+                <label for="registerCpf">CPF:</label>
+                <input type="text" id="registerCpf" name="cpf" required>
+                <label for="registerPassword">Senha:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit">Registrar</button>
+            </form>
+    
+            <h2>Login de Usuários</h2>
+            <form id="loginForm">
+                <label for="loginCpf">CPF:</label>
+                <input type="text" id="loginCpf" name="cpf" required>
+                <label for="loginPassword">Senha:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+    
+            <h2>Adicionar Transação</h2>
+            <form id="transactionForm">
+                <label for="transactionCpf">CPF:</label>
+                <input type="text" id="transactionCpf" name="cpf" required>
+                <label for="transactionAppName">Nome do App:</label>
+                <input type="text" id="transactionAppName" name="app_name" required>
+                <label for="transactionValor">Valor:</label>
+                <input type="number" id="transactionValor" name="valor" required>
+                <button type="submit">Adicionar Transação</button>
+            </form>
+    
+            <h2>Consultar Transações</h2>
+            <form id="consultForm">
+                <label for="consultCpf">CPF:</label>
+                <input type="text" id="consultCpf" name="cpf" required>
+                <button type="submit">Consultar</button>
+            </form>
+    
+            <div id="results"></div>
+        </div>
+    
+        <script src="/static/scripts.js"></script>
+    </body>
+</html>
